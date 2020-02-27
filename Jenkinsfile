@@ -1,5 +1,5 @@
 pipeline {
-    node {}
+    node ('maven') {
     stages {
         stage('Build') {
             steps {
@@ -18,4 +18,5 @@ pipeline {
             }
         }
     }
+}
 }
